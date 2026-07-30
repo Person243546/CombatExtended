@@ -359,7 +359,7 @@
 		<li IfModActive="Abraxas.MSERevived">ModPatches/Medical System Expansion - Revived</li>
 		<li IfModActive="MSE2.Core">ModPatches/Medical System Expansion 2</li>
 		<li IfModActive="Mlie.MedicalSupplements">ModPatches/Medicine Supplements (Continued)</li>
-		<li IfModActive="Arisher.Medieval.Bowyer">ModPatches/Medieval Bowyer</li>
+		<li IfModActive="zal.medievalbowyer">ModPatches/Medieval Bowyer</li>
 		<li IfModActive="Gerrymon.MCO">ModPatches/Medieval Coastal Outfits</li>
 		<li IfModActive="JoeDaly.MedMeds.MO">ModPatches/Medieval Medicines 1.4 Medieval Overhaul Edition</li>
 		<li IfModActive="DankPyon.Medieval.Overhaul">ModPatches/Medieval Overhaul</li>
@@ -395,7 +395,7 @@
 		<li IfModActive="noodlesking.MorePsycasts">ModPatches/More Psycasts</li>
 		<li IfModActive="SGC.moreutilitypacks,zal.moreutilitypacks">ModPatches/More Utility Packs</li>
 		<li IfModActive="paradox.morevanillaturrets">ModPatches/More Vanilla Turrets</li>
-		<li IfModActive="Orion.MoreMechanoids">ModPatches/MoreMechanoids</li>
+		<li IfModActive="Orion.MoreMechanoids, zal.moremechanoids">ModPatches/MoreMechanoids</li>
 		<li IfModActive="Morgante.MorganteMafiaWeaponsPack_copy">ModPatches/Morgante Mafia Weapons Pack</li>
 		<li IfModActive="Morgante.WW2ItalianWeapons_copy">ModPatches/Morgante WW2 Italian Weapons</li>
 		<li IfModActive="SirMashedPotato.MorrowRim">ModPatches/MorrowRim</li>
@@ -464,8 +464,8 @@
 		<li IfModActive="Pratt.RaW.WWIIWeaponsPackVanilla">ModPatches/Pratt WWII Weapons Pack</li>
 		<li IfModActive="Kilo.PrestigeVacSet">ModPatches/Prestige Vacsuit Set</li>
 		<li IfModActive="PrestigePhoenix.maltum">ModPatches/Prestige Specialist Armor</li>
-		<li IfModActive="PrimitiveCore.velcroboy333">ModPatches/Primitive Core</li>
-		<li IfModActive="primitiveproduction.velcroboy333">ModPatches/Primitive Workbenches</li>
+		<li IfModActive="PrimitiveCore.velcroboy333, zal.primitivecore">ModPatches/Primitive Core</li>
+		<li IfModActive="primitiveproduction.velcroboy333, zal.primitiveproduction">ModPatches/Primitive Workbenches</li>
 		<li IfModActive="botchjob.profaned">ModPatches/Profaned</li>
 		<li IfModActive="PRF.Materials">ModPatches/Project RimFactory - Materials</li>
 		<li IfModActive="DimonSever000.ProsthesesPlus13.Specific">ModPatches/Prostheses+</li>
