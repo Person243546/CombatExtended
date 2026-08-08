@@ -49,9 +49,6 @@ public class Settings : ModSettings, ISettingsCE
     private bool fasterRepeatShots = true;
     private float fasterRepeatShotsRecoilMult = 1.0f;
 
-    private bool visibilityWarmupPenalty = true;
-    private float visibilityPenaltyMultiplier = 10f;
-
     private float explosionPenMultiplier = 1.0f;
     private float explosionFalloffFactor = 1.0f;
 
@@ -178,9 +175,6 @@ public class Settings : ModSettings, ISettingsCE
 
     public bool FasterRepeatShots => fasterRepeatShots;
     public float FasterRepeatShotsRecoilMult => fasterRepeatShotsRecoilMult;
-
-    public bool VisibilityWarmupPenalty => visibilityWarmupPenalty;
-    public float VisibilityPenaltyMultiplier => visibilityPenaltyMultiplier;
     public bool MidBurstRetarget => midBurstRetarget;
 
     public float ExplosionPenMultiplier => explosionPenMultiplier;
@@ -282,7 +276,6 @@ public class Settings : ModSettings, ISettingsCE
         Scribe_Values.Look(ref fragmentsFromWallsReflected, "fragmentsFromWallsReflected", false);
         Scribe_Values.Look(ref fragmentsFromWallsIntensity, "fragmentsFromWallsIntensity", 1.0f);
         Scribe_Values.Look(ref fasterRepeatShots, "fasterRepeatShots", false);
-        Scribe_Values.Look(ref visibilityWarmupPenalty, "visibilityWarmupPenalty", true);
         Scribe_Values.Look(ref fasterRepeatShotsRecoilMult, "fasterRepeatShotsRecoilMult", 1.0f);
         Scribe_Values.Look(ref midBurstRetarget, "midBurstRetarget", true);
         Scribe_Values.Look(ref explosionPenMultiplier, "explosionPenMultiplier", 1.0f);
@@ -293,7 +286,6 @@ public class Settings : ModSettings, ISettingsCE
         lastAmmoSystemStatus = enableAmmoSystem;    // Store this now so we can monitor for changes
 
         Scribe_Values.Look(ref medicineSearchRadius, "medicineSearchRadius", 5f);
-        Scribe_Values.Look(ref visibilityPenaltyMultiplier, "visibilityPenaltyMultiplier", 10f);
 
         //OpportunisticReload
         Scribe_Values.Look(ref opportunisticReloadMode, nameof(opportunisticReloadMode), OpportunisticReloadMode.Any);
@@ -347,9 +339,7 @@ public class Settings : ModSettings, ISettingsCE
         left.CheckboxLabeled("CE_Settings_TurretsBreakShields_Title".Translate(), ref turretsBreakShields, "CE_Settings_TurretsBreakShields_Desc".Translate());
         left.CheckboxLabeled("CE_Settings_FasterRepeatShots_Title".Translate(), ref fasterRepeatShots, "CE_Settings_FasterRepeatShots_Desc".Translate());
         fasterRepeatShotsRecoilMult = left.SliderLabeled("CE_Settings_FasterRepeatShotsMultiplier_Title".Translate() + ": " + fasterRepeatShotsRecoilMult.ToString("F1"), fasterRepeatShotsRecoilMult, 0.1f, 3f, tooltip: "CE_Settings_FasterRepeatShotsMultiplier_Desc".Translate(), labelPct: 0.6f);
-        left.CheckboxLabeled("CE_Settings_VisibilityWarmupPenalty_Title".Translate(), ref visibilityWarmupPenalty, "CE_Settings_VisibilityWarmupPenalty_Desc".Translate());
-        visibilityPenaltyMultiplier = left.SliderLabeled("CE_Settings_VisibilityWarmupSlider_Title".Translate() + ": " + visibilityPenaltyMultiplier.ToString("F0"), visibilityPenaltyMultiplier, 1f, 100f, tooltip: "CE_Settings_VisibilityWarmupSlider_Desc".Translate(), labelPct: 0.6f);
-        left.Gap();
+       left.Gap();
         left.CheckboxLabeled("CE_Settings_MidBurstRetarget_Title".Translate(), ref midBurstRetarget, "CE_Settings_MidBurstRetarget_Desc".Translate());
         left.CheckboxLabeled("CE_Settings_EnableArcOfFire_Title".Translate(), ref enableArcOfFire, "CE_Settings_EnableArcOfFire_Desc".Translate());
         left.CheckboxLabeled("CE_Settings_EnableCIWS".Translate(), ref enableCIWS, "CE_Settings_EnableCIWS_Desc".Translate());
@@ -567,8 +557,6 @@ public class Settings : ModSettings, ISettingsCE
         turretsBreakShields = true;
         fasterRepeatShots = true;
         fasterRepeatShotsRecoilMult = 1.0f;
-        visibilityWarmupPenalty = true;
-        visibilityPenaltyMultiplier = 10f;
         midBurstRetarget = true;
         enableCIWS = true;
         fragmentsFromWalls = false;
